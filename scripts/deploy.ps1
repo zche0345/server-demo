@@ -14,4 +14,7 @@ Start-Process `
   -ArgumentList $appPath `
   -WorkingDirectory $projectRoot `
   -RedirectStandardOutput $stdoutPath `
-  -RedirectStandardError $stderrPath
+  -RedirectStandardError $stderrPath `
+  -WindowStyle Hidden | Out-Null
+
+exit 0
